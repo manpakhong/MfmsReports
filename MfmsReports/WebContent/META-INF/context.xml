@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+<Resource
+auth="Container"
+description="DB Connection"
+name="jdbc/MyLocalDB"
+global="jdbc/MyDB"
+type="javax.sql.DataSource"
+password="PeppaPig0513"
+driverClassName="com.mysql.jdbc.Driver"
+maxIdle="100"
+maxWait="5000"
+validationQuery="select * from tbl_location"
+username="root"
+url="jdbc:mysql://localhost:3306/epatrol"
+maxActive="500"/>
+<WatchedResource>WEB-INF/web.xml</WatchedResource>
+<WatchedResource>META-INF/context.xml</WatchedResource>
+</Context>
